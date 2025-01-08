@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="file"], input[type="checkbox"] {
+            margin-top: 5px;
+        }
+        .file-upload {
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            text-align: center;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        small {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+
+
+        <h2>Turkey Universities Application Form</h2>
+
+        <!-- Personal Information Section -->
+        <div class="form-group">
+            <label for="name">Name (Required)</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname (Required)</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="fatherName">Father Name (Required)</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+        </div>
+        <div class="form-group">
+            <label for="motherName">Mother Name (Required)</label>
+            <input type="text" id="motherName" name="motherName" required>
+        </div>
+        <div class="form-group">
+            <label for="nationality">Nationality</label>
+            <select id="nationality" name="nationality">
+                <option value=""></option>
+                <!-- Add more countries as needed -->
+                               >pakistan </option>
+                               <option value="Afghanistan"
+               >Aghanistan </option>
+                <option value="Bangladesh"
+               >Bangladesh </option>
+                <option value="India"
+               >India</option>
+                <option value="Nepal"
+               >Nepal </option>
+                <option value="Azad kashmir"
+               >Azad kashmir</option>
+
+                <option value="Jammu kashmir"
+               >Jammu kashmir </option>
+                <option value="Srilanka"
+               >Srilanka </option>
+
+            </select>
+        </div>
+        <!-- Academic Information Section -->
+        <div class="form-group">
+            <label for="qualifications">Previous Academic Qualifications</label>
+            <input type="text" id="qualifications" name="qualifications">
+        </div>
+        <div class="form-group">
+            <label for="qualificationStatus">Qualification (Current Status)</label>
+            <select id="qualificationStatus" name="qualificationStatus">
+                <option value="High School">--Select--</option>
+                <!-- Add more options if needed -->                <option value="INTERMEDIATE"
+               > INTERMEDIATE</option>
+                               <option value="GRADUATE"
+               >GRADUATE </option>
+<option value="MASTER"
+               >MASTER </option>
+                <option value="MPHIL"
+               >MPHIL </option>
+
+
+            </select>                
+        </div>
+        <div class="form-group">
+            <label for="schoolName">Name of your High School</label>
+            <input type="text" id="schoolName" name="schoolName">
+        </div>
+        <div class="form-group">
+            <label for="gpa">GPA - Your High School Average in % or Grades</label>
+            <input type="text" id="gpa" name="gpa">
+        </div>
+        <div class="form-group">
+            <label for="schoolCountry">Country</label>
+            <select id="schoolCountry" name="schoolCountry">
+                <option value=""></option>
+               >pakistan </option>
+                               <option value="Afghanistan"
+               >Aghanistan </option>
+                <option value="Bangladesh"
+               >Bangladesh </option>
+                <option value="India"
+               >India</option>
+                <option value="Nepal"
+               >Nepal </option>
+                <option value="Azad kashmir"
+               >Azad kashmir</option>
+
+                <option value="Jammu kashmir"
+               >Jammu kashmir </option>
+                <option value="Srilanka"
+               >Srilanka </option>
+
+            </select>
+        </div>
+
+        <!-- Program Selection Section -->
+        <div class="form-group">
+            <label for="programSelection">Program Selection (List in Rank of Preference)</label>
+            <input type="text" id="programSelection" name="programSelection">
+        </div>
+        <div class="form-group">
+            <label for="degree">I want to apply for</label>
+            <select id="degree" name="degree">
+                <option>--- CHOOSE A DEGREE ---</option>
+                <!-- Add degree options -->
+                <option value="undergraduation"
+               >undergraduation </option>
+                               <option value="Master"
+               >Master </option>
+                <option value="p.hd"
+               >P.hd</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="language">Language of Study</label>
+            <select id="language" name="language">
+                <option>--- CHOOSE A LANGUAGE ---</option>
+                <!-- Add language options -->                <option value="English"
+               >English </option>
+                <option value="Turkish"
+               >Turkish</option>
+                <option value="70%english 30%turkish"
+               >70%english 30%turkish </option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="universities">Choose Universities</label>
+            <input type="checkbox" id="universities" name="universities">
+            <span>If you have already decided for a university, tick it. If not, our consultants will recommend universities for you.</span>
+        </div>
+        <div class="form-group">
+            <label for="budget">Budget (yearly)</label>
+            <input type="number" id="budget" name="budget" required placeholder="Enter your yearly budget in USD">
+        </div>
+
+        <!-- File Upload Section -->
+        <!-- Confirmation Section -->
+        <div class="form-group">
+            <input type="checkbox" id="confirmation" name="confirmation" required>
+            <label for="confirmation">I confirm that the information provided by me to the best of my knowledge and belief is complete and true.</label>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="dataShare" name="dataShare" required>
+            <label for="dataShare">I confirm that my data may be shared with the partner universities of Skyline. I allow Skyline to apply for the above-mentioned department(s) to multiple universities.</label>
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="email">Email (Required)</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Phone (Required)</label>
+            <input type="text" id="mobile" name="mobile" required>
+        </div>
+
+
+
+
+  <input type="hidden" name="access_key" value="28e7dd05-7897-4e93-9dd8-16148cd63c6e">
+
+  
+  <button type="submit">Submit Form</button>
+
+</form>
+</body>
+</html>
